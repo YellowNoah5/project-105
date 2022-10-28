@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <title>Family Member Identifier</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+       <link rel="stylesheet" href="style.css">    
+    </head>
+    <body>
+        <div class="container"></div>
+    <center>
+    <h3 style="font-size:30" class="btn btn-warning heading">Family Member Identifier</h3>
+    <br><br>
+
+    <p style="font-size: 20px;">Model is Trained to Identify the People Listed:</p>
+    <b>
+        Big Sister
+        <hr>
+        Father
+        <hr>
+        Little Sister
+        <hr>
+        Brother
+        <hr>
+        Mother
+        <hr>
+    </b>
+    <label style="font-size: 20">Webcam View - </label>
+
+    <br><br>
+    <div id="camera"></div>
+    <br><br>
+    <div id="result"></div>
+    <br><br>
+    <button class="btn btn-info" onclick="Click_Image()">Click Image</button>
+    <br><br>
+    <button class="btn btn-primary" onclick="Identify_Img()">Identify Image</button>
+    <p style="font-size: 24px;">Person : <span id="PersonName"></span> </p>
+    <p style="font-size: 24px;">Accuracy : <span id="PersonAccuracy"></span>  </p>
+
+</center>
+</div>
+<script src="main.js"></script>
+</body>
+</html>
